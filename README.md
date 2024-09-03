@@ -1,84 +1,84 @@
 # Lyricify Lyrics Helper
 
-为 Lyricify 歌词相关功能竭力打造。
+Work hard to build Lyricify lyrics related functions.
 
-## 主要功能
-- 歌词解析
-  - Lyricify Syllable
-  - Lyricify Lines
-  - LRC
-  - QRC
-  - KRC
-  - YRC
-  - TTML (暂不支持)
-  - Spotify Lyrics (原始 JSON)
-  - Musixmatch (原始 JSON)
-- 歌词生成
-  - Lyricify Syllable
-  - Lyricify Lines
-  - LRC
-  - QRC
-  - KRC
-  - YRC
-- 歌词歌曲搜索
-  - QQ 音乐
-  - 网易云音乐
-  - 酷狗音乐
-  - Spotify (暂不支持)
-  - Musixmatch
-- 歌词处理优化
-  - Explicit 歌词处理及修复
-  - YRC 歌词优化
-  - 对唱识别 (暂不支持)
-  - 标题行识别 (暂不支持)
-- 歌词解密
-  - QRC
-  - KRC
-- 内嵌通用帮助类
-  - 中文帮助类 (简繁转换等)
-  - 字符串帮助类
-  - 数学帮助类
+## Main functions
+- Lyrics parsing
+- Lyricify Syllable
+- Lyricify Lines
+- LRC
+- QRC
+- KRC
+- YRC
+- TTML (not supported yet)
+- Spotify Lyrics (raw JSON)
+- Musixmatch (raw JSON)
+- Lyrics generation
+- Lyricify Syllable
+- Lyricify Lines
+- LRC
+- QRC
+- KRC
+- YRC
+- Lyrics song search
+- QQ Music
+- NetEase Cloud Music
+- Kugou Music
+- Spotify (not supported yet)
+- Musixmatch
+- Lyrics processing optimization
+- Explicit lyrics processing and repair
+- YRC lyrics optimization
+- Duet recognition (not supported yet)
+- Title line recognition (not supported yet)
+- Lyrics decryption
+- QRC
+- KRC
+- Embedded general help class
+- Chinese help class (conversion between simplified and traditional Chinese, etc.)
+- String help class
+- Mathematics help class
 
-## 项目架构
+## Project Architecture
 ### Lyricify.Lyrics.Helper
-- Decrypter // 歌词解密相关
-  - Krc
-  - Qrc
-- Generators // 歌词生成
-- Helpers // 帮助静态类
-  - General // 内嵌通用帮助
-    - ChineseHelper // 中文帮助
-    - StringHelper // 字符串帮助
-  - Optimization // 歌词处理优化
-    - Explicit // Explicit 歌词处理及修复
-    - Yrc // YRC 歌词优化
-    - Musixmatch // Musixmatch 歌词优化
-  - Types // 歌词类型
-    - Lrc // LRC 歌词类型特性
-  - GeneratorHelper // 生成帮助
-  - OffsetHelper // 偏移帮助 (用于对歌词添加 Offset 偏移)
-  - ParserHelper // 解析帮助
-  - SearchHelper // 搜索帮助
-  - TypeHelper // 歌词类型帮助
-- Models // 歌词模型
-- Parsers // 歌词解析
-- Providers // 歌词提供者
-  - Web // 提供者相关接口
-- Searchers // 歌曲搜索
-  - Helpers
-    - ArtistHelper // 艺人帮助 (艺人中英文名对照)
-    - CompareHelper // 信息匹配帮助
-  - SearcherHelper // 实例化的搜索类
+- Decrypter // Lyrics decryption related
+- Krc
+- Qrc
+- Generators // Lyrics generation
+- Helpers // Helper static class
+- General // Embedded general help
+- ChineseHelper // Chinese help
+- StringHelper // String help
+- Optimization // Lyrics processing optimization
+- Explicit // Explicit lyrics processing and repair
+- Yrc // YRC lyrics optimization
+- Musixmatch // Musixmatch lyrics optimization
+- Types // Lyrics type
+- Lrc // LRC lyrics type characteristics
+- GeneratorHelper // Generation help
+- OffsetHelper // Offset help (used to add Offset offset to lyrics)
+- ParserHelper // Parsing help
+- SearchHelper // Search help
+- TypeHelper // Lyrics type help
+- Models // Lyrics model
+- Parsers // Lyrics parsing
+- Providers // Lyrics provider
+- Web // Provider related interfaces
+- Searchers // Song search
+- Helpers
+- ArtistHelper // Artist help (Chinese and English name comparison of artists)
+- CompareHelper // Information matching help
+- SearcherHelper // Instantiated search class
 
 ### Lyricify.Lyrics.Demo
 - Program
-  - ParsersDemo // 歌词解析演示
-  - GeneratorsDemo // 歌词生成演示
-  - TypeDetectorDemo // 歌词类型判断演示
-  - SearchDemo // 歌曲搜索演示
+- ParsersDemo // Lyrics parsing demo
+- GeneratorsDemo // Lyrics generation demo
+- TypeDetectorDemo // Lyrics type judgment demo
+- SearchDemo // Song search demo
 
-## 感谢与支持
-特别感谢 [@cnbluefire](https://github.com/cnbluefire), [@Raspberry Kan](https://github.com/Raspberry-Monster) 提供的帮助和支持。  
-#### 感谢以下第三方代码
+## Thanks and support
+Special thanks to [@cnbluefire](https://github.com/cnbluefire), [@Raspberry Kan](https://github.com/Raspberry-Monster) for their help and support.
+#### Thanks to the following third-party code
 - LyricParser (MIT License): https://github.com/HyPlayer/LyricParser
 - 163MusicLyrics (Apache-2.0 License): https://github.com/jitwxs/163MusicLyrics
